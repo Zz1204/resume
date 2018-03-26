@@ -43,10 +43,11 @@ $('a.s-scroll').on('click',function() {
 
 // 页面加载器
 $(function(){
-    $('#page-loader').addClass('hidden');
+	setTimeout(function(){
+		$('#page-loader').addClass('hidden');
+	},3000)
+    
 });
-
-
 /* 页面/部分背景 */
 
 var background = '#ccc';
@@ -126,4 +127,14 @@ $(document).ready(function() {
         },
         afterRender: function(){}
     });
+});
+
+//  图表
+
+jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
 });

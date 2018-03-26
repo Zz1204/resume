@@ -37,7 +37,7 @@
     <body id="menu" class="alt-bg">
         <!-- 页面加载器 -->
         <div class="page-loader" id="page-loader">
-            <div><i class="ion ion-load-a"></i><p>loading</p></div>
+            <img class="icon-logo" src="img/icon.gif"/>
         </div>
         
 		<!-- 头部小导航 -->
@@ -62,19 +62,19 @@
 					<span class="title">Home page</span>
 				</li>
 				<li data-menuanchor="when">
-					<a href="#when" class=""><i class="icon ion ion-android-alarm"></i>
+					<a href="#when" class=""><i class="icon ion ion-connection-bars"></i>
 					</a>
-					<span class="title">When</span>
+					<span class="title">About Me</span>
 				</li>
 				<li data-menuanchor="register">
 					<a href="#register"><i class="icon ion ion-compose"></i>
 					</a>
-					<span class="title">Stay in touch</span>
+					<span class="title">self-study</span>
 				</li>
 				<li data-menuanchor="about-us">
-					<a href="#about-us"><i class="icon ion ion-android-information"></i>
+					<a href="#about-us"><i class="icon ion ion-person"></i>
 					</a>
-					<span class="title">About Us</span>
+					<span class="title">About Me</span>
 				</li>
 				<li data-menuanchor="contact">
 					<a href="#contact"><i class="icon ion ion-android-call"></i>
@@ -142,58 +142,78 @@
 			</div>
             
             <!-- 第二页 -->
-            <div class="section page-home page page-cent" id="s-home">
-				<!-- Logo -->
-				<div class="logo-container">
-					<img class="h-logo" src="img/logo_only.png" alt="Logo">
-				</div>
-				<!-- Content -->
-				<section class="content">
-					
-					<header class="header">
-						<div class="h-left">
-							<h2>New <strong>Company</strong></h2>
-						</div>
-						<div class="h-right">
-							<h3>Lorem <br>agency</h3>
-							<h4 class="subhead"><a href="#when">Available here soon</a></h4>
-						</div>
-					</header>
-				</section>
-				
-				<!-- next -->
+            <div class="section page-about page page-cent" id="s-when">
+                <section class="content">
+                    <header class="p-title">
+                        <h3>About Me<i class="ion ion-person">
+                            </i>
+                        </h3>
+                        <h2>你好，我叫张航，来自山东省菏泽市，21岁</h2>
+						<h2>我毕业于济宁职业技术学院，没错，专科院校</h2>
+                    </header>
+                    <article class="text">
+                        <p>而且所学专业也并不是计算机，<strong>但是，</strong>这并不能阻挡我喜欢敲代码的手！自学前端，今后的职业规划是朝着全栈工程师发展，毕竟前后交互比写写样式更带感（个人观点）。</p>
+                        <p class="text-right">-----------------目标还是要有的，万一实现了呢</p>
+                        
+                    </article>
+                </section>
                 <footer class="p-footer p-scrolldown">
-                    <a href="#when">
+                    <a href="#contact">
                         <div class="arrow-d">
-							<div class="before">Tell&nbsp;me</div>
-							<div class="after">When</div>
+							<div class="before">Contact</div>
+							<div class="after">Message</div>
 							<div class="circle"></div>
 						</div>
                     </a>                        
                 </footer>
-			</div>
+            </div>
             
             <!-- 第三页 -->
             <div class="section page-register page page-cent " id="s-register">
                 <section class="content">
                     <header class="p-title">
-                        <h3>Register <i class="ion ion-compose"></i></h3> 
+                        <h3>
+                        	self-study
+                        	<i class="ion ion-pie-graph"></i>
+                        </h3>
                     </header>
-                    <div>
-                        <form id="mail-subscription" class="form magic send_email_form" method="get" action="ajaxserver/serverfile.php">
-                            <p class="invite center">Please, write your email below to stay in touch with us :</p>
-							<div class="fields clearfix">
-								<div class="input">
-									<label for="reg-email">Email </label>
-									<input id="reg-email" class="email_f"  name="email" type="email" required placeholder="your@email.address" data-validation-type="email"></div>
-								<div class="buttons">
-									<button id="submit-email" class="button email_b" name="submit_email">Ok</button>
-								</div>
-							</div>
-                            
-                            <p class="email-ok invisible"><strong>Thank you</strong> for your subscription. We will inform you.</p>
-                        </form>
-                    </div>
+                    <article class="text">
+						<div class="skillbar clearfix " data-percent="85%">
+							<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+							<div class="skillbar-bar" style="background: #e67e22;"></div>
+							<div class="skill-bar-percent">85%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="80%">
+							<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+							<div class="skillbar-bar" style="background: #3498db;"></div>
+							<div class="skill-bar-percent">80%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="80%">
+							<div class="skillbar-title" style="background: #2c3e50;"><span>JavaScript</span></div>
+							<div class="skillbar-bar" style="background: #2c3e50;"></div>
+							<div class="skill-bar-percent">80%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="80%">
+							<div class="skillbar-title" style="background: #46465e;"><span>jQuery</span></div>
+							<div class="skillbar-bar" style="background: #5a68a5;"></div>
+							<div class="skill-bar-percent">80%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="75%">
+							<div class="skillbar-title" style="background: #333333;"><span>vue</span></div>
+							<div class="skillbar-bar" style="background: #525252;"></div>
+							<div class="skill-bar-percent">75%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="65%">
+							<div class="skillbar-title" style="background: #27ae60;"><span>mongodb</span></div>
+							<div class="skillbar-bar" style="background: #2ecc71;"></div>
+							<div class="skill-bar-percent">65%</div>
+						</div> <!-- End Skill Bar -->
+						<div class="skillbar clearfix " data-percent="60%">
+							<div class="skillbar-title" style="background: #124e8c;"><span>MEVN架构</span></div>
+							<div class="skillbar-bar" style="background: #4288d0;"></div>
+							<div class="skill-bar-percent">60%</div>
+						</div> <!-- End Skill Bar -->
+                    </article>
                 </section>
                 <footer class="p-footer p-scrolldown">
                     <a href="#about-us">
